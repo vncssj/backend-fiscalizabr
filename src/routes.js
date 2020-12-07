@@ -5,6 +5,9 @@ const OcorrenciaController = require('./controllers/OcorrenciaController');
 
 const routes = express.Router();
 
+routes.get('/', (req, res) => {
+    res.send("Rodando essa Porra")
+});
 routes.get('/usuario', UsuarioController.index);
 routes.get('/usuario/usuario_id', UsuarioController.indexId);
 routes.post('/usuario', UsuarioController.create);
